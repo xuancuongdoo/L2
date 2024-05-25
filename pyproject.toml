@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "travel-recommendations"
+version = "0.1.0"
+description = "A FastAPI app for travel recommendations using OpenAI GPT-4"
+authors = ["cuong"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+pydantic = "^2.7.1"
+loguru = "^0.7.2"
+httpx = "^0.27.0"
+openai = "^1.30.2"
+pydantic-settings = "^2.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
